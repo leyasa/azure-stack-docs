@@ -26,7 +26,7 @@ Secrets help you maintain secure communication between the Azure Stack Hub infra
 
 1. Prepare the certificates which will be used for secret rotation.
 2. Review the Azure Stack Hub [public key infrastructure certificate requirements](https://docs.microsoft.com/azure-stack/operator/azure-stack-pki-certs).
-3. [Use the privileged endpoint](azure-stack-privileged-endpoint.md) and run **Test-azurestack**  to confirm that everything is fine.  
+3. [Use the privileged endpoint](azure-stack-privileged-endpoint.md) and run **Test-azurestack -Group SecretRotationReadiness -Debug**  to confirm that everything is fine.  
 4. Review the [pre-steps for secret rotation](#pre-steps-for-secret-rotation).
 5. [Validate Azure Stack Hub PKI certificates](https://docs.microsoft.com/azure-stack/operator/azure-stack-validate-pki-certs). Make sure there are no special characters in the password, like `*` or `)`.
 6. Make sure the PFX encryption is **TripleDES-SHA1**. If you run into an issue, see [Fix common issues with Azure Stack Hub PKI certificates](https://docs.microsoft.com/azure-stack/operator/azure-stack-remediate-certs#pfx-encryption).
